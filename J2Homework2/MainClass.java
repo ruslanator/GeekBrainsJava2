@@ -12,13 +12,13 @@ public class MainClass {
     }
 
     static String[][] convertString(String s) {
-        String tmp = s + "\n";
+        String string = s + "\n";
         int col = 0;
-        for (int i = 0, space = 0; i < tmp.length(); i++) {
-            if (tmp.charAt(i) == ' ') {
+        for (int i = 0, space = 0; i < string.length(); i++) {
+            if (string.charAt(i) == ' ') {
                 space++;
             }
-            if (tmp.charAt(i) == '\n') {
+            if (string.charAt(i) == '\n') {
                 col++;
                 if (space == 3) space = 0;
                 else throw new NewException("размер матрицы, полученной из строки, не равен 4x4");
